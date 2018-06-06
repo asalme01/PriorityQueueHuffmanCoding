@@ -16,6 +16,7 @@ class Asg4(unittest.TestCase):
         pq.enqueue('ZZ', -1)
         self.assertEqual(pq.front(), 'z')
 
+
     def test_priorityqueue_2(self):
         pq = PriorityQueue()
         pq.enqueue('a', 0)

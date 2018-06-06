@@ -1,20 +1,3 @@
-'''
-    def enqueue(self, item, priority):
-        newNode = Node(item, priority)
-        if self.head is None:
-            self.head = self.last = newNode
-        if priority > self.head.get_priority():
-            newNode.set_next(self.head)
-            self.head = newNode
-        else:
-            curr = self.head.next
-            while curr is not None and curr.priority < priority:
-                self.head = self.head.next
-            newNode.set_next(curr)
-            curr = newNode
-'''
-
-
 class Node:
     def __init__(self, item: object, priority: int, next=None):
         self.item = item
